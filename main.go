@@ -2,7 +2,10 @@ package main
 
 import "fmt"
 
+import "go-template/src/math"
 
 func main() {
-    fmt.Println("Hello, World")
+	xs := []float64{1, 2, 3, 4}
+	avg := math.Average(xs)
+	fmt.Println(avg)
 }
